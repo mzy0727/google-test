@@ -1,0 +1,5 @@
+if(EXISTS "/home/mzy/Code/googletest-demo/bulid/graphics/painter_test[1]_tests.cmake")
+  include("/home/mzy/Code/googletest-demo/bulid/graphics/painter_test[1]_tests.cmake")
+else()
+  add_test(painter_test_NOT_BUILT painter_test_NOT_BUILT)
+endif()

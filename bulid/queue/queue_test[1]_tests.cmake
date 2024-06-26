@@ -1,0 +1,5 @@
+add_test( QueueTest.IsEmptyInitially /home/mzy/Code/googletest-demo/bin/queue_test [==[--gtest_filter=QueueTest.IsEmptyInitially]==] --gtest_also_run_disabled_tests)
+set_tests_properties( QueueTest.IsEmptyInitially PROPERTIES WORKING_DIRECTORY /home/mzy/Code/googletest-demo/bulid/queue)
+add_test( QueueTest.DequeueWorks /home/mzy/Code/googletest-demo/bin/queue_test [==[--gtest_filter=QueueTest.DequeueWorks]==] --gtest_also_run_disabled_tests)
+set_tests_properties( QueueTest.DequeueWorks PROPERTIES WORKING_DIRECTORY /home/mzy/Code/googletest-demo/bulid/queue)
+set( queue_test_TESTS QueueTest.IsEmptyInitially QueueTest.DequeueWorks)

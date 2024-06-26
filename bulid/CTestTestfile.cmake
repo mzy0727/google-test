@@ -7,3 +7,6 @@
 include("/home/mzy/Code/googletest-demo/bulid/hello_test[1]_include.cmake")
 subdirs("_deps/googletest-build")
 subdirs("factorial")
+subdirs("graphics")
+subdirs("queue")
+subdirs("prime")

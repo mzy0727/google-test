@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/queue_test.dir/queue.cc.o CMakeFiles/queue_test.dir/queue_test.cc.o  -o ../../bin/queue_test  ../lib/libgtest_main.a ../lib/libgtest.a -lpthread 

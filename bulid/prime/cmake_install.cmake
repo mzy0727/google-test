@@ -1,4 +1,4 @@
-# Install script for directory: /home/mzy/Code/googletest-demo
+# Install script for directory: /home/mzy/Code/googletest-demo/prime
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,23 +37,3 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/mzy/Code/googletest-demo/bulid/_deps/googletest-build/cmake_install.cmake")
-  include("/home/mzy/Code/googletest-demo/bulid/factorial/cmake_install.cmake")
-  include("/home/mzy/Code/googletest-demo/bulid/graphics/cmake_install.cmake")
-  include("/home/mzy/Code/googletest-demo/bulid/queue/cmake_install.cmake")
-  include("/home/mzy/Code/googletest-demo/bulid/prime/cmake_install.cmake")
-
-endif()
-
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mzy/Code/googletest-demo/bulid/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

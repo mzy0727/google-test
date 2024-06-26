@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/painter_test.dir/painter.cc.o CMakeFiles/painter_test.dir/painter_test.cc.o  -o ../../bin/painter_test  ../lib/libgmock_main.a ../lib/libgmock.a ../lib/libgtest.a -lpthread 

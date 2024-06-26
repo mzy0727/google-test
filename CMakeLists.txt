@@ -31,3 +31,6 @@ include(GoogleTest)
 gtest_discover_tests(hello_test)
 
 add_subdirectory(factorial)
+add_subdirectory(graphics)
+add_subdirectory(queue)
+add_subdirectory(prime)

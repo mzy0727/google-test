@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mzy/Code/googletest-demo/bulid/CMakeFiles /home/mzy/Code/googletest-demo/bulid/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/mzy/Code/googletest-demo/bulid && $(CMAKE_COMMAND) -E cmake_progress_start /home/mzy/Code/googletest-demo/bulid/CMakeFiles /home/mzy/Code/googletest-demo/bulid/graphics/CMakeFiles/progress.marks
+	cd /home/mzy/Code/googletest-demo/bulid && $(MAKE) -f CMakeFiles/Makefile2 graphics/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mzy/Code/googletest-demo/bulid/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/mzy/Code/googletest-demo/bulid && $(MAKE) -f CMakeFiles/Makefile2 graphics/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,162 +154,87 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/mzy/Code/googletest-demo/bulid && $(MAKE) -f CMakeFiles/Makefile2 graphics/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/mzy/Code/googletest-demo/bulid && $(MAKE) -f CMakeFiles/Makefile2 graphics/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mzy/Code/googletest-demo/bulid && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named hello_test
+# Convenience name for target.
+graphics/CMakeFiles/painter_test.dir/rule:
+	cd /home/mzy/Code/googletest-demo/bulid && $(MAKE) -f CMakeFiles/Makefile2 graphics/CMakeFiles/painter_test.dir/rule
+.PHONY : graphics/CMakeFiles/painter_test.dir/rule
 
-# Build rule for target.
-hello_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello_test
-.PHONY : hello_test
+# Convenience name for target.
+painter_test: graphics/CMakeFiles/painter_test.dir/rule
 
-# fast build rule for target.
-hello_test/fast:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/build
-.PHONY : hello_test/fast
-
-#=============================================================================
-# Target rules for targets named gmock_main
-
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
-.PHONY : gmock_main
-
-# fast build rule for target.
-gmock_main/fast:
-	$(MAKE) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
-
-#=============================================================================
-# Target rules for targets named gmock
-
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gmock
-.PHONY : gmock
-
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-#=============================================================================
-# Target rules for targets named factorial_test
-
-# Build rule for target.
-factorial_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 factorial_test
-.PHONY : factorial_test
-
-# fast build rule for target.
-factorial_test/fast:
-	$(MAKE) -f factorial/CMakeFiles/factorial_test.dir/build.make factorial/CMakeFiles/factorial_test.dir/build
-.PHONY : factorial_test/fast
-
-#=============================================================================
-# Target rules for targets named painter_test
-
-# Build rule for target.
-painter_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 painter_test
 .PHONY : painter_test
 
 # fast build rule for target.
 painter_test/fast:
-	$(MAKE) -f graphics/CMakeFiles/painter_test.dir/build.make graphics/CMakeFiles/painter_test.dir/build
+	cd /home/mzy/Code/googletest-demo/bulid && $(MAKE) -f graphics/CMakeFiles/painter_test.dir/build.make graphics/CMakeFiles/painter_test.dir/build
 .PHONY : painter_test/fast
 
-#=============================================================================
-# Target rules for targets named queue_test
+painter.o: painter.cc.o
 
-# Build rule for target.
-queue_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 queue_test
-.PHONY : queue_test
-
-# fast build rule for target.
-queue_test/fast:
-	$(MAKE) -f queue/CMakeFiles/queue_test.dir/build.make queue/CMakeFiles/queue_test.dir/build
-.PHONY : queue_test/fast
-
-#=============================================================================
-# Target rules for targets named prime_unittest
-
-# Build rule for target.
-prime_unittest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 prime_unittest
-.PHONY : prime_unittest
-
-# fast build rule for target.
-prime_unittest/fast:
-	$(MAKE) -f prime/CMakeFiles/prime_unittest.dir/build.make prime/CMakeFiles/prime_unittest.dir/build
-.PHONY : prime_unittest/fast
-
-hello_test.o: hello_test.cc.o
-
-.PHONY : hello_test.o
+.PHONY : painter.o
 
 # target to build an object file
-hello_test.cc.o:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello_test.cc.o
-.PHONY : hello_test.cc.o
+painter.cc.o:
+	cd /home/mzy/Code/googletest-demo/bulid && $(MAKE) -f graphics/CMakeFiles/painter_test.dir/build.make graphics/CMakeFiles/painter_test.dir/painter.cc.o
+.PHONY : painter.cc.o
 
-hello_test.i: hello_test.cc.i
+painter.i: painter.cc.i
 
-.PHONY : hello_test.i
+.PHONY : painter.i
 
 # target to preprocess a source file
-hello_test.cc.i:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello_test.cc.i
-.PHONY : hello_test.cc.i
+painter.cc.i:
+	cd /home/mzy/Code/googletest-demo/bulid && $(MAKE) -f graphics/CMakeFiles/painter_test.dir/build.make graphics/CMakeFiles/painter_test.dir/painter.cc.i
+.PHONY : painter.cc.i
 
-hello_test.s: hello_test.cc.s
+painter.s: painter.cc.s
 
-.PHONY : hello_test.s
+.PHONY : painter.s
 
 # target to generate assembly for a file
-hello_test.cc.s:
-	$(MAKE) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/hello_test.cc.s
-.PHONY : hello_test.cc.s
+painter.cc.s:
+	cd /home/mzy/Code/googletest-demo/bulid && $(MAKE) -f graphics/CMakeFiles/painter_test.dir/build.make graphics/CMakeFiles/painter_test.dir/painter.cc.s
+.PHONY : painter.cc.s
+
+painter_test.o: painter_test.cc.o
+
+.PHONY : painter_test.o
+
+# target to build an object file
+painter_test.cc.o:
+	cd /home/mzy/Code/googletest-demo/bulid && $(MAKE) -f graphics/CMakeFiles/painter_test.dir/build.make graphics/CMakeFiles/painter_test.dir/painter_test.cc.o
+.PHONY : painter_test.cc.o
+
+painter_test.i: painter_test.cc.i
+
+.PHONY : painter_test.i
+
+# target to preprocess a source file
+painter_test.cc.i:
+	cd /home/mzy/Code/googletest-demo/bulid && $(MAKE) -f graphics/CMakeFiles/painter_test.dir/build.make graphics/CMakeFiles/painter_test.dir/painter_test.cc.i
+.PHONY : painter_test.cc.i
+
+painter_test.s: painter_test.cc.s
+
+.PHONY : painter_test.s
+
+# target to generate assembly for a file
+painter_test.cc.s:
+	cd /home/mzy/Code/googletest-demo/bulid && $(MAKE) -f graphics/CMakeFiles/painter_test.dir/build.make graphics/CMakeFiles/painter_test.dir/painter_test.cc.s
+.PHONY : painter_test.cc.s
 
 # Help Target
 help:
@@ -324,18 +249,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... hello_test"
-	@echo "... gmock_main"
-	@echo "... gmock"
-	@echo "... gtest_main"
-	@echo "... gtest"
-	@echo "... factorial_test"
 	@echo "... painter_test"
-	@echo "... queue_test"
-	@echo "... prime_unittest"
-	@echo "... hello_test.o"
-	@echo "... hello_test.i"
-	@echo "... hello_test.s"
+	@echo "... painter.o"
+	@echo "... painter.i"
+	@echo "... painter.s"
+	@echo "... painter_test.o"
+	@echo "... painter_test.i"
+	@echo "... painter_test.s"
 .PHONY : help
 
 
@@ -347,6 +267,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mzy/Code/googletest-demo/bulid && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

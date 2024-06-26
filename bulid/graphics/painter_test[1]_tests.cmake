@@ -1,0 +1,7 @@
+add_test( PainterTest.DrawCircle /home/mzy/Code/googletest-demo/bin/painter_test [==[--gtest_filter=PainterTest.DrawCircle]==] --gtest_also_run_disabled_tests)
+set_tests_properties( PainterTest.DrawCircle PROPERTIES WORKING_DIRECTORY /home/mzy/Code/googletest-demo/bulid/graphics)
+add_test( PainterTest.DrawRectangle /home/mzy/Code/googletest-demo/bin/painter_test [==[--gtest_filter=PainterTest.DrawRectangle]==] --gtest_also_run_disabled_tests)
+set_tests_properties( PainterTest.DrawRectangle PROPERTIES WORKING_DIRECTORY /home/mzy/Code/googletest-demo/bulid/graphics)
+add_test( PainterTest.DrawLine /home/mzy/Code/googletest-demo/bin/painter_test [==[--gtest_filter=PainterTest.DrawLine]==] --gtest_also_run_disabled_tests)
+set_tests_properties( PainterTest.DrawLine PROPERTIES WORKING_DIRECTORY /home/mzy/Code/googletest-demo/bulid/graphics)
+set( painter_test_TESTS PainterTest.DrawCircle PainterTest.DrawRectangle PainterTest.DrawLine)

@@ -1,0 +1,5 @@
+if(EXISTS "/home/mzy/Code/googletest-demo/bulid/prime/prime_unittest[1]_tests.cmake")
+  include("/home/mzy/Code/googletest-demo/bulid/prime/prime_unittest[1]_tests.cmake")
+else()
+  add_test(prime_unittest_NOT_BUILT prime_unittest_NOT_BUILT)
+endif()
