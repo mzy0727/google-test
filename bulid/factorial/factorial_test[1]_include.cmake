@@ -1,0 +1,5 @@
+if(EXISTS "/home/mzy/Code/googletest-demo/bulid/factorial/factorial_test[1]_tests.cmake")
+  include("/home/mzy/Code/googletest-demo/bulid/factorial/factorial_test[1]_tests.cmake")
+else()
+  add_test(factorial_test_NOT_BUILT factorial_test_NOT_BUILT)
+endif()

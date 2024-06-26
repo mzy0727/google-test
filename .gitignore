@@ -1,0 +1,18 @@
+# C++
+*.o
+*.obj
+*.out
+*.exe
+
+# CMake
+/build*/
+/cmake-build*/
+
+# Visual Studio Code
+/.vscode/
+
+# CLion
+/.idea/
+
+# Visual Studio
+/.vs/
